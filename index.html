@@ -41,13 +41,13 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-            	<section>
-	                <h1>Sass &amp; Compass</h1>
-	                <h3>Les CSS comme on aime</h3>
-	                <p>
-	                    <small>Par <a href="http://kgaut.net">Kevin Gautreau</a> / <a href="http://twitter.com/kgaut">@kgaut</a></small>
-	                </p>
-	            </section>
+        <section>
+            <h1>Sass &amp; Compass</h1>
+            <h3>Les CSS comme on aime</h3>
+            <p>
+                <small>Par <a href="http://kgaut.net">Kevin Gautreau</a> / <a href="http://twitter.com/kgaut">@kgaut</a></small>
+            </p>
+        </section>
 				<section>
 					<h1>
 						<span class="fragment highlight-current-blue">Syntactically</span>
@@ -61,7 +61,6 @@
 					<p>SASS est un <strong>préprocesseur</strong> (preprocessor)</p>
 					<img src="images/sass-principe.gif">
 				</section>
-
 				<section>
 					<h1>En deux mots <em>compréhensibles</em></h1>
 					<p>Nouvelle manière d'écrire des feuilles de style.</p>
@@ -158,20 +157,21 @@ div#contenu {
 						<li><em>Moins déroutante</em></li>
 						<li>Utilisée par défaut avec compass</li>
 					</ul>
-				</section>            <section>
-				<div class="half">
-					<h1>SASS</h1>
-          <pre><code class="sass">
+				</section>
+        <section>
+				  <div class="half">
+            <h1>SASS</h1>
+            <pre><code class="sass">
 ul
   width : 100%
   li
     color : red
     list-style : none
                 </code></pre>
-				</div>
-				<div class="half">
-					<h1>SCSS</h1>
-                    <pre><code class="scss">
+				  </div>
+				  <div class="half">
+					  <h1>SCSS</h1>
+            <pre><code class="scss">
 ul {
   width : 100%;
   li {
@@ -179,37 +179,37 @@ ul {
     list-style : none;
   }
 }
-					</code></pre>
-				</div>
-			</section>
-			<section>
-				<h1>Installation SASS</h1>
-			</section>
-			<section>
-				<h1>Étape 1</h1>
-				<h2>Pré-requis : ruby</h2>
-				<p>Windows : Téléchargement de Ruby Installer sur <a href="http://rubyinstaller.org" target="_blank">rubyinstaller.org</a></p>
-			</section>
-			<section>
-				<h2>Instalation de Sass</h2>
-				<p>Dans le terminal taper : </p>
-				<pre><code>gem install sass</code></pre>
-			</section>
+					  </code></pre>
+				  </div>
+			  </section>
+        <section>
+          <h1>Installation SASS</h1>
+        </section>
+        <section>
+          <h1>Étape 1</h1>
+          <h2>Pré-requis : ruby</h2>
+          <p>Windows : Téléchargement de Ruby Installer sur <a href="http://rubyinstaller.org" target="_blank">rubyinstaller.org</a></p>
+        </section>
+        <section>
+          <h2>Instalation de Sass</h2>
+          <p>Dans le terminal taper : </p>
+          <pre><code>gem install sass</code></pre>
+        </section>
         <section>
           <h1>Compilation d'un fichier</h1>
           Dans un terminal :
           <pre><code>$ sass test.scss:test.css</code></pre>
         </section>
         <section>
-        <h1>watcher</h1>
-        Dans un terminal :
-        <pre><code>
+          <h1>watcher</h1>
+          Dans un terminal :
+          <pre><code>
 $ sass --watch test.scss:test.css
 >>> Sass is watching for changes. Press Ctrl-C to stop.
 write test.css
 write test.css.map
-        </code></pre>
-      </section>
+          </code></pre>
+        </section>
         <section>
           <h1>Watcher</h1>
           <h2>Surveiller plusieurs fichiers</h2>
@@ -239,7 +239,7 @@ write test.css.map
 .icon-mail {
   background-image: url("../image/mail.png");
 }
-                </code></pre>
+          </code></pre>
         </section>
         <section>
           <h1>Le sélecteur &amp;</h1>
@@ -257,76 +257,76 @@ a {
                 </code></pre>
           <a target="_blank" href="http://jsbin.com/jatudi/edit?html,css,output">Exemple</a>
         </section>
-			</div>
-      <section>
-        <h1>Fonctions - Couleurs</h1>
-        <div class="fragment">
-          Couleur HTML standard :
-          <pre><code>color : lighten(blue,20%);</code></pre>
-        </div>
-        <div class="fragment">
-          Couleur hexadecimale
-          <pre><code>color : darken(#ff9900,10%);</code></pre>
-        </div>
-        <div class="fragment">
-          Couleur en variable
-          <pre><code>color : darken($color-link,30%);</code></pre>
-        </div>
-      </section>
-      <section>
-        <h1>Mixins</h1>
-        <pre><code>
+        <section>
+          <h1>Fonctions - Couleurs</h1>
+          <div class="fragment">
+            Couleur HTML standard :
+            <pre><code>color : lighten(blue,20%);</code></pre>
+          </div>
+          <div class="fragment">
+            Couleur hexadecimale
+            <pre><code>color : darken(#ff9900,10%);</code></pre>
+          </div>
+          <div class="fragment">
+            Couleur en variable
+            <pre><code>color : darken($color-link,30%);</code></pre>
+          </div>
+        </section>
+        <section>
+          <h1>Mixins</h1>
+          <pre><code>
 @mixin titre {
   font-size : 1.7em;
   font-family : "Shadows Into Light",cursive;
   color : white;
 }
-        </code></pre>
-      </section>
-      <section>
-        <h1>Mixins - usage</h1>
-        <h3>Usage</h3>
-        <pre><code>
+          </code></pre>
+        </section>
+        <section>
+          <h1>Mixins - usage</h1>
+          <h3>Usage</h3>
+          <pre><code>
 article {
   h2 {
     @include titre;
   }
 }
-        </code></pre>
-      </section>
-      <section>
-        <h1>Mixins - Arguments</h1>
-        <h3>Définition</h3>
-        <pre><code>
+          </code></pre>
+        </section>
+        <section>
+          <h1>Mixins - Arguments</h1>
+          <h3>Définition</h3>
+          <pre><code>
 @mixin titre($font-size) {
   font-size : $font-size;
   font-family : "Shadows Into Light",cursive;
   color : white;
 }
-        </code></pre>
-      </section>
-      <section>
-        <h1>Mixins - Arguments</h1>
-        <h3>Usage</h3>
-        <pre><code>
+          </code></pre>
+        </section>
+        <section>
+          <h1>Mixins - Arguments</h1>
+          <h3>Usage</h3>
+          <pre><code>
 article {
   h2 {
     @include titre(1.3em);
   }
 }
-        </code></pre>
-      </section>
-      <section>
-        <h1>Mixins - Arguments</h1>
-        <h3>Valeur par défaut</h3>
-        <pre><code>
+          </code></pre>
+        </section>
+        <section>
+          <h1>Mixins - Arguments</h1>
+          <h3>Valeur par défaut</h3>
+          <pre><code>
 @mixin titre($font-size : 1.7em) {
   font-size : $font-size;
   font-family : "Shadows Into Light",cursive;
   color : white;
 }
-        </code></pre>
-      </section>
+          </code></pre>
+        </section>
+		  </div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
