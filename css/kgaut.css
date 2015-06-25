@@ -1,0 +1,41 @@
+.color1 {
+  color: #FF9900; }
+
+.color2 {
+  color: #9900FF; }
+
+.color3 {
+  color: #0099FF; }
+
+.color4 {
+  color: #FF0099; }
+
+.color5 {
+  color: #00FF99; }
+
+section pre.large {
+  width: 100%; }
+section code {
+  border-radius: 15px; }
+section img {
+  border-radius: 15px; }
+  section img#img-svg {
+    background-color: white; }
+  section img.current-visible {
+    height: 0; }
+    section img.current-visible.current-fragment {
+      height: auto; }
+section .half {
+  width: 49%; }
+  section .half:first-of-type {
+    float: left; }
+  section .half:last-of-type {
+    float: right; }
+section .third {
+  width: 31%;
+  float: left;
+  margin: 0 2px; }
+  section .third:first-of-type {
+    margin-left: 0; }
+  section .third:last-of-type {
+    margin-right: 0; }

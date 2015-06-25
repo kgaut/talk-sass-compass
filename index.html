@@ -15,6 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/kgaut.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Code syntax highlighting -->
@@ -47,7 +48,141 @@
 	                    <small>Par <a href="http://kgaut.net">Kevin Gautreau</a> / <a href="http://twitter.com/kgaut">@kgaut</a></small>
 	                </p>
 	            </section>
+				<section>
+					<h1>
+						<span class="fragment highlight-current-blue">Syntactically</span>
+						<span class="fragment highlight-current-blue">Awesome</span>
+						<span class="fragment highlight-current-blue">Style</span>
+						<span class="fragment highlight-current-blue">Sheets</span>
+					</h1>
+				</section>
+				<section>
+					<h1>En deux mots</h1>
+					<p>SASS est un <strong>préprocesseur</strong> (preprocessor)</p>
+					<img src="images/sass-principe.gif">
+				</section>
 
+				<section>
+					<h1>En deux mots <em>compréhensibles</em></h1>
+					<p>Nouvelle manière d'écrire des feuilles de style.</p>
+					<ul>
+						<li class="fragment">Syntaxe</li>
+						<li class="fragment">Fonctionnalités</li>
+						<li class="fragment">... et beaucoup plus</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Principe</h1>
+					<ul>
+						<li class="fragment">Création de fichier avec une nouvelle syntaxe</li>
+						<li class="fragment">Compilation des fichiers SASS</li>
+						<li class="fragment">Génération d'un fichier css "normal"</li>
+					</ul>
+				</section>
+				<section>
+					<h1>En 3 bouts de code</h1>
+					<ul>
+						<li class="fragment">Variables</li>
+						<li class="fragment">Imbrication</li>
+						<li class="fragment">... et beaucoup plus</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Variables</h1>
+					<div class="half">
+						<h3>CSS</h3>
+                    <pre><code>
+div#contenu {
+	background-color: #FF9900;
+}
+					</code></pre>
+					</div>
+					<div class="half">
+						<h3>SASS</h3>
+                <pre><code>
+$couleur : #FF9900;
+div#contenu {
+	background-color: $couleur;
+}
+				</code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>Imbrication</h1>
+					<div class="half">
+						<h2>CSS</h2>
+                <pre><code>
+div#contenu {
+	width : 100%;
+}
+div#contenu p {
+	color : red;
+}
+				</code></pre>
+					</div>
+					<div class="half">
+						<h2>SASS</h2>
+                <pre><code>
+div#contenu {
+	width : 100%;
+	p {
+		color : red;
+	}
+}
+				</code></pre>
+					</div>
+				</section>
+				<section>
+					<h1>SASS - SCSS</h1>
+					<h3>Une technologie, deux syntaxes</h3>
+				</section>
+				<section>
+					<h1>SASS</h1>
+					<ul>
+						<li>Un preprocesseur</li>
+						<li>Une syntaxe</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Syntaxe SASS</h1>
+					<ul>
+						<li>Sensible à l'indentation</li>
+						<li>Moins verbeuse</li>
+						<li>Moins de ponctuation</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Syntaxe SCSS</h1>
+					<ul>
+						<li>Semblable à la syntaxe CSS</li>
+						<li><em>Moins déroutante</em></li>
+						<li>Utilisée par défaut avec compass</li>
+					</ul>
+				</section>            <section>
+				<div class="half">
+
+					<h1>SASS</h1>
+                    <pre><code class="sass">
+ul
+	width : 100%
+	li
+		color : red
+		list-style : none
+					</code></pre>
+				</div>
+				<div class="half">
+					<h1>SCSS</h1>
+                    <pre><code class="scss">
+ul {
+	width : 100%;
+	li {
+		color : red;
+		list-style : none;
+	}
+}
+					</code></pre>
+				</div>
+			</section>
 			</div>
 
 		</div>
