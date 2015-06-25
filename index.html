@@ -183,34 +183,6 @@ ul {
 				  </div>
 			  </section>
         <section>
-          <h1>Installation SASS</h1>
-        </section>
-        <section>
-          <h1>Étape 1</h1>
-          <h2>Pré-requis : ruby</h2>
-          <p>Windows : Téléchargement de Ruby Installer sur <a href="http://rubyinstaller.org" target="_blank">rubyinstaller.org</a></p>
-        </section>
-        <section>
-          <h2>Instalation de Sass</h2>
-          <p>Dans le terminal taper : </p>
-          <pre><code>gem install sass</code></pre>
-        </section>
-        <section>
-          <h1>Compilation d'un fichier</h1>
-          Dans un terminal :
-          <pre><code>$ sass test.scss:test.css</code></pre>
-        </section>
-        <section>
-          <h1>watcher</h1>
-          Dans un terminal :
-          <pre><code>
-$ sass --watch test.scss:test.css
->>> Sass is watching for changes. Press Ctrl-C to stop.
-write test.css
-write test.css.map
-          </code></pre>
-        </section>
-        <section>
           <h1>Watcher</h1>
           <h2>Surveiller plusieurs fichiers</h2>
           <pre><code>$ sass --watch style/scss:style/css</code></pre>
@@ -325,6 +297,122 @@ article {
   color : white;
 }
           </code></pre>
+        </section>
+        <section>
+        <h1>Installation SASS</h1>
+      </section>
+        <section>
+          <h1>Étape 1</h1>
+          <h2>Pré-requis : ruby</h2>
+          <p>Windows : Téléchargement de Ruby Installer sur <a href="http://rubyinstaller.org" target="_blank">rubyinstaller.org</a></p>
+        </section>
+        <section>
+          <h2>Instalation de Sass</h2>
+          <p>Dans le terminal taper : </p>
+          <pre><code>gem install sass</code></pre>
+        </section>
+        <section>
+          <h1>Compilation d'un fichier</h1>
+          Dans un terminal :
+          <pre><code>$ sass test.scss:test.css</code></pre>
+        </section>
+        <section>
+          <h1>watcher</h1>
+          Dans un terminal :
+          <pre><code>
+$ sass --watch test.scss:test.css
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+write test.css
+write test.css.map
+          </code></pre>
+        </section>
+        <section>
+          <h1>Sass - import</h1>
+        </section>
+
+        <section>
+          <h1>Sass - import</h1>
+          <h2>Problématique</h2>
+          <p>
+            <span class="fragment">Gros fichier (>1000 lignes)</span>&nbsp;
+            <span class="fragment">⇒ fragmente en plusieurs fichiers</span>&nbsp;
+            <span class="fragment">⇒ "Scope" des variable et mixin réduit</span>&nbsp;
+          </p>
+          <p class="fragment">Obligé de copier/coller ces éléments dans tous les fichiers ?</p>
+          <p class="fragment">⇒ directive <strong>import</strong></p>
+        </section>
+        <section>
+          <h1>Sass - import</h1>
+          <h2>Principe</h2>
+          <p>Agrège différents fichiers SCSS en un seul CSS.</p>
+          <p>Permet de garder des fichiers courts, compréhensibles.</p>
+        </section>
+        <section>
+          <img src="images/sass-import.gif" />
+        </section>
+        <section>
+          <h1>Sass - import</h1>
+          <h2>Exemple</h2>
+          <div class="half">
+            <img src="images/sass-import-structure.png" />
+          </div>
+          <div class="half">
+            <img src="images/sass-import-fichier-style.png" />
+          </div>
+        </section>
+        <section>
+          <h1>COMPASS</h1>
+          <h2>Introduction</h2>
+        </section>
+        <section>
+          <h1>Qu'est-ce ?</h1>
+          <p class="fragment">Framework SASS</p>
+          <p class="fragment">Notion de "projet" (config...)</p>
+          <p class="fragment">Ensemble de <em>Mixins</em> importables au besoin</p>
+          </ul>
+        </section>
+        <section>
+          <h1>Structure technique</h1>
+          <ul>
+            <li class="fragment">Gem Ruby (comme SASS)</li>
+          </ul>
+        </section>
+        <section>
+          <h1>Installation</h1>
+          <pre><code>$ gem install compass</code></pre>
+        </section>
+        <section>
+          <h1>Création d'un projet Compass</h1>
+          <pre><code>$ compass create projet_compass</code></pre>
+        </section>
+        <section>
+          <h1>Watch avec Compass</h1>
+          <p class="fragment">utilisation de l'utilitaire compass en lieu et place de sass</p>
+          <pre class="fragment"><code>$ compass watch</code></pre>
+          <p class="fragment">Plus d'option à passer (lecture du fichier config)</p>
+        </section>
+        <section>
+          <h1>Les Mixins</h1>
+          <p class="fragment">Compass propose un ensemble de mixins à utiliser à la carte.</p>
+          <p class="fragment">Exemple : mixins CSS3</p>
+        </section>
+        <section>
+          <h1>Mixins CSS3</h1>
+          <p>import via</p>
+          <pre><code>@import "compass/css3"</code></pre>
+          <p>Utilisation avec @include</p>
+          <pre><code>
+img {
+  @include border-radius(10px);
+}
+          </code></pre>
+          <a href="http://compass-style.org/reference/compass/css3/border_radius/" target="_blank">Documentation</a>
+        </section>
+        <section>
+          <h1>Mais encore...</h1>
+          <p class="fragment">Fonctions "helpers" pour la gestion des medias</p>
+          <p class="fragment">Génération de sprites à la volée</p>
+          <p class="fragment">Des plugins (zen-grids par exemple)</p>
         </section>
 		  </div>
 		</div>
